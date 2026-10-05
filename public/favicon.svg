@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <!-- Shield Background -->
+  <path d="M50 8 L85 24 C85 60 50 88 50 88 C50 88 15 60 15 24 Z" fill="url(#shieldGrad)" stroke="#60a5fa" stroke-width="3" stroke-linejoin="round" />
+  
+  <!-- Location Pin & Pulse -->
+  <circle cx="50" cy="42" r="14" fill="url(#accentGrad)" opacity="0.9" />
+  <circle cx="50" cy="42" r="6" fill="#ffffff" />
+  <path d="M43 49 L50 64 L57 49 Z" fill="url(#accentGrad)" />
+
+  <!-- Life Rings / Pulse Waves -->
+  <path d="M30 42 A 20 20 0 0 1 70 42" stroke="#ffffff" stroke-width="2" stroke-dasharray="3 3" opacity="0.6" />
+</svg>

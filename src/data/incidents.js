@@ -1,0 +1,341 @@
+export const initialIncidents = [
+  {
+    id: "INC-2026-001",
+    title: "Severe Urban Flash Flooding in Low-Lying Sectors",
+    type: "Flood",
+    location: "Gajuwaka, Visakhapatnam",
+    coordinates: [17.6904, 83.2098],
+    severity: "Critical",
+    affectedPeople: 1250,
+    reportedBy: "Ramesh Varma (Local Resident)",
+    contact: "+91 98480 22341",
+    reportedTime: "2026-09-21T08:30:00.000Z",
+    status: "Responding",
+    description: "Incessant heavy rainfall caused massive waterlogging up to 4.5 feet across residential blocks. Over 300 households stranded without power and drinking water.",
+    requiredAssistance: "NDRF inflatable rescue boats, emergency drinking water packets, mobile medical unit, evacuation tarpaulins.",
+    responseTeam: "Team Alpha - NDRF 10th Bn & Vizag Disaster Volunteers",
+    allocatedResources: [
+      { resourceName: "Drinking Water Packets (1L)", quantity: 600 },
+      { resourceName: "Inflatable Rescue Boat", quantity: 4 },
+      { resourceName: "Emergency Food Rations", quantity: 450 }
+    ],
+    assignedVolunteers: ["VOL-001", "VOL-004", "VOL-009"]
+  },
+  {
+    id: "INC-2026-002",
+    title: "Cyclone Coastal Surge & Tree Fall Blockade",
+    type: "Cyclone",
+    location: "RK Beach Road, Visakhapatnam",
+    coordinates: [17.7126, 83.3228],
+    severity: "High",
+    affectedPeople: 420,
+    reportedBy: "Coastal Patrol Officer Satish",
+    contact: "+91 94401 55672",
+    reportedTime: "2026-09-21T07:15:00.000Z",
+    status: "Responding",
+    description: "High velocity gale winds (95 km/h) uprooted massive banyan and electric poles across main arterial road. Power lines snapped and vehicular access completely blocked.",
+    requiredAssistance: "Chainsaw clearing squads, AP Transco emergency electrical repair crew, traffic diversions.",
+    responseTeam: "GVMC Quick Response Unit 2",
+    allocatedResources: [
+      { resourceName: "Heavy Duty Chainsaw Kits", quantity: 6 },
+      { resourceName: "Emergency Power Generators", quantity: 2 }
+    ],
+    assignedVolunteers: ["VOL-003", "VOL-011"]
+  },
+  {
+    id: "INC-2026-003",
+    title: "Chemical Storage Warehouse Fire Outbreak",
+    type: "Fire",
+    location: "Autonagar Industrial Zone, Visakhapatnam",
+    coordinates: [17.6975, 83.1895],
+    severity: "Critical",
+    affectedPeople: 180,
+    reportedBy: "Security Supervisor Anand",
+    contact: "+91 99890 11234",
+    reportedTime: "2026-09-21T09:45:00.000Z",
+    status: "Responding",
+    description: "Major category 3 industrial fire triggered by short circuit in paint thinner storage unit. Toxic smoke plumes dispersing towards adjacent residential colony.",
+    requiredAssistance: "Foam fire tenders, hazmat respirators, immediate evacuation of 500m radius perimeter.",
+    responseTeam: "AP State Disaster & Fire Services (5 Tenders)",
+    allocatedResources: [
+      { resourceName: "Industrial Chemical Extinguishers", quantity: 20 },
+      { resourceName: "Hazmat Masks & PPE Suits", quantity: 50 },
+      { resourceName: "Advanced Life Support Ambulance", quantity: 3 }
+    ],
+    assignedVolunteers: ["VOL-002", "VOL-008"]
+  },
+  {
+    id: "INC-2026-004",
+    title: "Hillside Landslide Blocking Ghat Pass",
+    type: "Landslide",
+    location: "Simhachalam Ghat Road, Visakhapatnam",
+    coordinates: [17.7664, 83.2506],
+    severity: "High",
+    affectedPeople: 95,
+    reportedBy: "Temple Security Guard Prasad",
+    contact: "+91 91210 33456",
+    reportedTime: "2026-09-20T22:10:00.000Z",
+    status: "In Progress",
+    description: "Continuous downpour triggered mudslide carrying boulders onto hairpin curve 4. Two passenger minivans trapped safely between road splits.",
+    requiredAssistance: "Earth movers (JCBs), hydraulic cutters, hillside stabilization netting.",
+    responseTeam: "Roads & Buildings Emergency Task Force",
+    allocatedResources: [
+      { resourceName: "Hydraulic Earth Movers", quantity: 2 },
+      { resourceName: "First Aid Trauma Kits", quantity: 10 }
+    ],
+    assignedVolunteers: ["VOL-005", "VOL-014"]
+  },
+  {
+    id: "INC-2026-005",
+    title: "Godavari River Inundation in Low Island Hamlets",
+    type: "Flood",
+    location: "Lanka Villages, Rajahmundry",
+    coordinates: [17.0005, 81.8040],
+    severity: "Critical",
+    affectedPeople: 3400,
+    reportedBy: "Gram Panchayat Secretary Murali",
+    contact: "+91 97000 44567",
+    reportedTime: "2026-09-21T05:00:00.000Z",
+    status: "Responding",
+    description: "Third flood warning issued at Dowleswaram Barrage. Over 6 island villages submerged under 3 feet floodwaters. Immediate mass evacuation to relief camps in progress.",
+    requiredAssistance: "Motorized country boats, food dry rations, halogen searchlights, chlorine tablets for water purification.",
+    responseTeam: "SDRF 3rd Battalion & District Revenue Wing",
+    allocatedResources: [
+      { resourceName: "Inflatable Rescue Boat", quantity: 8 },
+      { resourceName: "Water Purification Tablets (1000s)", quantity: 30 },
+      { resourceName: "Emergency Food Rations", quantity: 1200 },
+      { resourceName: "Thermal Blankets", quantity: 800 }
+    ],
+    assignedVolunteers: ["VOL-001", "VOL-006", "VOL-012"]
+  },
+  {
+    id: "INC-2026-006",
+    title: "Multi-Vehicle Collision with Fuel Tanker Leakage",
+    type: "Accident",
+    location: "NH-16 Bypass, Vijayawada",
+    coordinates: [16.5062, 80.6480],
+    severity: "High",
+    affectedPeople: 45,
+    reportedBy: "Highway Patrol Inspector Rao",
+    contact: "+91 94906 77890",
+    reportedTime: "2026-09-21T09:10:00.000Z",
+    status: "Responding",
+    description: "Collision involving diesel tanker, tourist bus and private car. Minor diesel leakage contained on asphalt; 8 passengers need trauma care.",
+    requiredAssistance: "Trauma ambulances, sand spreading trucks, traffic clearing cranes.",
+    responseTeam: "Vijayawada City Traffic & Emergency Medics",
+    allocatedResources: [
+      { resourceName: "Advanced Life Support Ambulance", quantity: 4 },
+      { resourceName: "First Aid Trauma Kits", quantity: 15 }
+    ],
+    assignedVolunteers: ["VOL-002", "VOL-010"]
+  },
+  {
+    id: "INC-2026-007",
+    title: "Storm Surge & Sea Erosion in Fishermen Colony",
+    type: "Cyclone",
+    location: "Uppada Beach, Kakinada",
+    coordinates: [17.0863, 82.3275],
+    severity: "High",
+    affectedPeople: 850,
+    reportedBy: "Fishermen Union Representative Appa Rao",
+    contact: "+91 93930 88901",
+    reportedTime: "2026-09-21T06:30:00.000Z",
+    status: "Responding",
+    description: "Rough sea conditions with 4m waves destroyed coastal seawall. 40 thatched huts partially damaged. Families shifted to Cyclone Shelter 3.",
+    requiredAssistance: "High-capacity sandbags, emergency shelter provisions, baby food, dry clothes.",
+    responseTeam: "Kakinada Disaster Management Cell",
+    allocatedResources: [
+      { resourceName: "Family Emergency Tents", quantity: 30 },
+      { resourceName: "Thermal Blankets", quantity: 400 },
+      { resourceName: "Emergency Food Rations", quantity: 500 }
+    ],
+    assignedVolunteers: ["VOL-007", "VOL-013"]
+  },
+  {
+    id: "INC-2026-008",
+    title: "Nagavali River Flash Surge in Agricultural Belt",
+    type: "Flood",
+    location: "Amadalavalasa, Srikakulam",
+    coordinates: [18.4167, 83.9000],
+    severity: "Medium",
+    affectedPeople: 620,
+    reportedBy: "Tahsildar K. Somayajulu",
+    contact: "+91 98499 66789",
+    reportedTime: "2026-09-20T18:00:00.000Z",
+    status: "Verified",
+    description: "Upstream dam discharge caused overflow into low-lying agricultural fields and 2 hamlets. Cattle relocated to elevated bunds.",
+    requiredAssistance: "Veterinary medicines, drinking water tanks, dry fodder bundles.",
+    responseTeam: "Srikakulam District Quick Response Unit",
+    allocatedResources: [
+      { resourceName: "Drinking Water Packets (1L)", quantity: 400 },
+      { resourceName: "Water Purification Tablets (1000s)", quantity: 15 }
+    ],
+    assignedVolunteers: ["VOL-004", "VOL-015"]
+  },
+  {
+    id: "INC-2026-009",
+    title: "Commercial Complex Basement Fire & Smoke Lock",
+    type: "Fire",
+    location: "Governorpet, Vijayawada",
+    coordinates: [16.5186, 80.6200],
+    severity: "High",
+    affectedPeople: 110,
+    reportedBy: "Mall Manager Srinivas",
+    contact: "+91 98850 12345",
+    reportedTime: "2026-09-21T10:15:00.000Z",
+    status: "Responding",
+    description: "Transformer blast in basement parking filled 4 upper floors with thick black smoke. 45 shoppers safely guided via external fire escape staircases.",
+    requiredAssistance: "Smoke exhaust blowers, oxygen resuscitation kits, thermal imaging cameras.",
+    responseTeam: "Vijayawada Central Fire Station",
+    allocatedResources: [
+      { resourceName: "Industrial Chemical Extinguishers", quantity: 12 },
+      { resourceName: "First Aid Trauma Kits", quantity: 8 }
+    ],
+    assignedVolunteers: ["VOL-002", "VOL-009"]
+  },
+  {
+    id: "INC-2026-010",
+    title: "Coastal Tidal Inundation in Saltpan Settlements",
+    type: "Flood",
+    location: "Krishnapatnam Port Vicinity, Nellore",
+    coordinates: [14.2833, 80.1167],
+    severity: "Medium",
+    affectedPeople: 380,
+    reportedBy: "Village Sarpanch Lakshmi",
+    contact: "+91 99660 77412",
+    reportedTime: "2026-09-20T14:40:00.000Z",
+    status: "Verified",
+    description: "High astronomical tide breached temporary embankment. Drinking water open wells contaminated with brackish saline water.",
+    requiredAssistance: "Mobile RO water filtration trucks, gastro-preventive medicines, tarpaulins.",
+    responseTeam: "Nellore Rural Relief Squad",
+    allocatedResources: [
+      { resourceName: "Drinking Water Packets (1L)", quantity: 500 },
+      { resourceName: "Family Emergency Tents", quantity: 15 }
+    ],
+    assignedVolunteers: ["VOL-003", "VOL-008"]
+  },
+  {
+    id: "INC-2026-011",
+    title: "Minor Seismic Tremor & Structural Cracks in School",
+    type: "Earthquake",
+    location: "Kothavalasa, Vizianagaram",
+    coordinates: [17.8936, 83.1878],
+    severity: "Medium",
+    affectedPeople: 210,
+    reportedBy: "Headmaster Narayana",
+    contact: "+91 94411 22890",
+    reportedTime: "2026-09-20T11:20:00.000Z",
+    status: "Resolved",
+    description: "Magnitude 3.8 mild tremor caused hairline cracks on two exterior walls of government high school. Students evacuated to open playground as safety precaution.",
+    requiredAssistance: "Structural engineering inspection team, psychological counseling for young pupils.",
+    responseTeam: "District Disaster Management Inspection Team",
+    allocatedResources: [
+      { resourceName: "First Aid Trauma Kits", quantity: 5 }
+    ],
+    assignedVolunteers: ["VOL-006"]
+  },
+  {
+    id: "INC-2026-012",
+    title: "Railway Level Crossing Technical Derailment",
+    type: "Accident",
+    location: "Samalkot Junction, Kakinada",
+    coordinates: [17.0500, 82.1667],
+    severity: "Medium",
+    affectedPeople: 60,
+    reportedBy: "Station Master Samalkot",
+    contact: "+91 98481 00234",
+    reportedTime: "2026-09-19T16:00:00.000Z",
+    status: "Resolved",
+    description: "Goods train brake van derailed at slow shunt speed. Track cleared and normalized in 3 hours. No civilian casualties.",
+    requiredAssistance: "Railway breakdown crane, emergency track lighting.",
+    responseTeam: "South Central Railway Emergency Relief Train (ERT)",
+    allocatedResources: [
+      { resourceName: "Emergency Power Generators", quantity: 1 }
+    ],
+    assignedVolunteers: ["VOL-010"]
+  },
+  {
+    id: "INC-2026-013",
+    title: "Residential Area LPG Cylinder Blast & Wall Collapse",
+    type: "Fire",
+    location: "Muralinagar, Visakhapatnam",
+    coordinates: [17.7410, 83.2750],
+    severity: "High",
+    affectedPeople: 28,
+    reportedBy: "Neighbor Harish Reddy",
+    contact: "+91 98492 44321",
+    reportedTime: "2026-09-21T04:20:00.000Z",
+    status: "Responding",
+    description: "Domestic cylinder burst during morning cooking caused partial collapse of first-floor brick balcony. 3 persons sustained minor burn injuries.",
+    requiredAssistance: "Burn dressings, structural shoring jacks, temporary shifting support.",
+    responseTeam: "Marripalem Fire Station & 108 Emergency Ambulance",
+    allocatedResources: [
+      { resourceName: "First Aid Trauma Kits", quantity: 6 },
+      { resourceName: "Advanced Life Support Ambulance", quantity: 1 }
+    ],
+    assignedVolunteers: ["VOL-002", "VOL-011"]
+  },
+  {
+    id: "INC-2026-014",
+    title: "Torrential Rain Hill Stream Overflow Cutting Off Bridge",
+    type: "Flood",
+    location: "Paderu Agency Area, Alluri Sitharama Raju",
+    coordinates: [18.0833, 82.6667],
+    severity: "Critical",
+    affectedPeople: 1900,
+    reportedBy: "ITDA Project Officer Office",
+    contact: "+91 89352 50123",
+    reportedTime: "2026-09-21T03:00:00.000Z",
+    status: "Responding",
+    description: "Gushing hill stream washed away approach ramp of causeway bridge. 9 tribal habitations cut off from healthcare center and highway.",
+    requiredAssistance: "Helicopter airdrop of essentials, satellite comms phone, temporary zip-line cable trolley for medical emergencies.",
+    responseTeam: "AP Special Police Agency Patrol & Red Cross Teams",
+    allocatedResources: [
+      { resourceName: "Emergency Food Rations", quantity: 700 },
+      { resourceName: "Water Purification Tablets (1000s)", quantity: 25 },
+      { resourceName: "Satellite Phone & Comms Kit", quantity: 2 }
+    ],
+    assignedVolunteers: ["VOL-001", "VOL-005", "VOL-014"]
+  },
+  {
+    id: "INC-2026-015",
+    title: "Severe Squall Storm Damage to Rooftops & Fishing Boats",
+    type: "Cyclone",
+    location: "Bheemunipatnam (Bheemili), Visakhapatnam",
+    coordinates: [17.8900, 83.4500],
+    severity: "High",
+    affectedPeople: 540,
+    reportedBy: "Bheemili Marine Fishery Guard",
+    contact: "+91 97012 33499",
+    reportedTime: "2026-09-20T20:30:00.000Z",
+    status: "Verified",
+    description: "Sudden coastal squall damaged 14 anchored motorized catamarans and ripped tin sheets off 35 beachside houses. Community center opened for shelter.",
+    requiredAssistance: "Waterproof tarpaulin rolls, rope winches, emergency dry food packets.",
+    responseTeam: "Coastal Guard Marine Unit & Red Cross",
+    allocatedResources: [
+      { resourceName: "Family Emergency Tents", quantity: 20 },
+      { resourceName: "Emergency Food Rations", quantity: 300 }
+    ],
+    assignedVolunteers: ["VOL-007", "VOL-013"]
+  },
+  {
+    id: "INC-2026-016",
+    title: "Major Transformer Blast & Power Grid Failure",
+    type: "Other",
+    location: "MVP Colony Sector 4, Visakhapatnam",
+    coordinates: [17.7420, 83.3350],
+    severity: "Low",
+    affectedPeople: 320,
+    reportedBy: "Resident Welfare Association VP",
+    contact: "+91 94400 88219",
+    reportedTime: "2026-09-21T06:00:00.000Z",
+    status: "Resolved",
+    description: "Overloaded substation transformer caught fire briefly before automatic trip. APEPDCL replaced secondary breaker and restored grid by 09:00 AM.",
+    requiredAssistance: "Electrical linesmen crew, backup diesel genset for medical clinic.",
+    responseTeam: "APEPDCL Quick Repair Crew",
+    allocatedResources: [
+      { resourceName: "Emergency Power Generators", quantity: 1 }
+    ],
+    assignedVolunteers: ["VOL-010"]
+  }
+];
